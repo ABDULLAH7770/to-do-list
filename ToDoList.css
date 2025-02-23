@@ -1,0 +1,83 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+}
+
+/* النمط الافتراضي (الوضع الفاتح) */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* الوضع الداكن */
+.dark-mode {
+    background-color: #121212;      
+    color: #ffffff;
+}
+
+.dark-mode .container {
+    background: #1e1e1e;    
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode input, 
+.dark-mode button, 
+.dark-mode #task-list {
+    background: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+.dark-mode input::placeholder {
+    color: #bbb;
+}
+
+.dark-mode button {
+    background: #ff9800;
+}
+
+.dark-mode button:hover {
+    background: #e68900;
+}
+
+.dark-mode h1 {
+    color: #ffcc00;
+}
